@@ -6,11 +6,47 @@
 
         <title>NW.js Crypto</title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <script src="js/encrypt.js"></script>
+        <script src="js/decrypt.js"></script>
 
-        <script>
-            document.write(JSON.stringify(process.versions, false, 4));
-        </script>
+        <style>
+            label { font-weight: bold; display: block; }
+            textarea { width: 100%; height: 300px; }
+        </style>
     </head>
 
-    <body></body>
+    <body>
+        <div>
+            <label>Text to encrypt</label>
+            <textarea id="encrypt-text"></textarea>
+        </div>
+
+        <div>
+            <label>Text to decrypt</label>
+            <textarea id="decrypt-text"></textarea>
+        </div>
+
+        <button id="encrypt">Encrypt</button>
+        <button id="decrypt">Decrypt</button>
+
+        <script>
+            document.getElementById('encrypt').onclick = function()
+            {
+                var input = document.getElementById('encrypt-text').value;
+                var output = encrypt(input);
+
+                document.getElementById('encrypt-text').value = '';
+                document.getElementById('decrypt-text').value = output;
+            }
+
+            document.getElementById('decrypt').onclick = function()
+            {
+                var input = document.getElementById('decrypt-text').value;
+                var output = decrypt(input);
+
+                document.getElementById('encrypt-text').value = output;
+                document.getElementById('decrypt-text').value = '';
+            }
+        </script>
+    </body>
 </html>

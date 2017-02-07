@@ -3,7 +3,8 @@ A simple test app using NW.js and node-mcrypt
 
 1. Download NW.js files from https://nwjs.io
 2. Copy NW.js files into the **nwjs/** folder
-3. Run ./start.sh
+3. Run npm install
+4. Run ./start.sh
 
 
 ## Other info
