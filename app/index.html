@@ -30,6 +30,8 @@
         <button id="decrypt">Decrypt</button>
 
         <script>
+            require('nw.gui').Window.get().showDevTools();
+
             document.getElementById('encrypt').onclick = function()
             {
                 var input = document.getElementById('encrypt-text').value;

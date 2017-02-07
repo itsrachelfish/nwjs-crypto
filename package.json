@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "mcrypt": "^0.1.12",
     "ursa": "^0.9.4"
   }
 }

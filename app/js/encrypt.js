@@ -1,6 +1,4 @@
-var crypto = require('crypto');
 var fs = require('fs');
-var mcrypt = require('mcrypt');
 var ursa = require('ursa');
 
 var publicKeyFile = fs.readFileSync(process.cwd() + '/keys/test-key.pub');

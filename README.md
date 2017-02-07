@@ -1,5 +1,5 @@
 # nwjs-crypto
-A simple test app using NW.js and node-mcrypt
+A simple test app using NW.js and ursa
 
 1. Download NW.js files from https://nwjs.io
 2. Copy NW.js files into the **nwjs/** folder
